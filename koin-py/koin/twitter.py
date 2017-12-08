@@ -24,7 +24,7 @@ api = tweepy.API(auth)
 class MyStreamListener(tweepy.StreamListener):
     def on_data(self, data):
         d = json.loads(data)
-        l.debug("T: %s", data)
+        # l.debug("T: %s", data)
 
         try:
             d["_id"] = d["id"]
